@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up
+    </title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Ride</h1>
+    </div>
+    <div class="content">
+        <div class="form-container">
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="input-field" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="input-field" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="button" onclick="openNewRidePage()">Sign Up</button>
+            </form>
+        </div>
+        <div class="social-buttons">
+            <button class="facebook-button">Sign Up with Facebook</button>
+            <button class="google-button">Sign Up with Google</button>
+            <button class="mobile-button">Sign Up with Mobile</button>
+        </div>
+    </div>
+    <script>
+        function openNewRidePage() {
+            window.location.href = "homepage.html";
+        }
+    </script>
+</body>
+</html>

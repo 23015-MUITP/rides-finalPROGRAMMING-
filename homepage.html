@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>My App Home</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome, Aditya Bansal</h1>
+        <p>Member since: June 2022</p>
+        <button class="profile-button" onclick="openProfilePage()">
+            <img src="../me and madhav.jpeg" alt="View Profile">
+            <span>View Profile</span>
+        </button>
+    </div>
+    <div class="content">
+      
+    <div class="options">
+        <div class="option" onclick="openNewRidePage()">
+            <img src="http://bit.ly/car_icon" alt="Book a Ride">
+            <p>Book a Ride</p>
+        </div>
+        <div class="option" onclick="openSubscriptionPage()">
+            <img src="subscription_icon.png" alt="View Subscription">
+            <p>View Subscription</p>
+        </div>
+        <div class="option" onclick="openPaymentsPage()">
+            <img src="payments_icon.png" alt="View Payments">
+            <p>View Payments</p>
+        </div>
+        <div class="option" onclick="openRideHistoryPage()">
+            <img src="history_icon.png" alt="Vew Driver Profile">
+            <p>Driver Profile</p>
+        </div>
+        
+    </div>
+    <div class="upcoming-rides">
+        <h2> Upcoming Rides</h2>
+        <div class="ride">
+            <div class="ride-details">
+                <p class="ride-type">To Office</p>
+                <p class="ride-time">Tommorow, 9:00 Am</p>
+            </div>
+            <button class="track-button" onclick="openTrackRide()">Track Ride</button>
+        </div>
+        <div class="ride">
+            <div class="ride-details">
+                <p class="ride-type">To Home</p>
+                <p class="ride-time">Today, 9:00 Am - 10:23 Am</p>
+            </div>
+            <button class="track-button" onclick="openTrackRide()">Track Ride</button>
+        </div>
+    </div>
+    <div class="recent-rides">
+        <h2>Recent Rides</h2>
+        <div class="ride">
+            <div class="ride-details">
+                <p class="ride-type">To Home</p>
+                <p class="ride-amount">47minutes</p>
+                <p class="ride-time">Today, 5:00 Pm - 5:47 Pm</p>
+            </div>
+            <button class="review-button">Leave a Review</button>
+        </div>
+        <div class="ride">
+            <div class="ride-details">
+                <p class="ride-type">To Office</p>
+                <p class="ride-amount">1hr 23minutes</p>
+                <p class="ride-time">Today, 9:00 Am - 10:23 Am</p>
+            </div>
+            <button class="review-button">Leave a Review</button>
+        </div>
+    </div>
+    <div class="notifications">
+        <h2>Notifications</h2>
+        <ul>
+            <li> You saved 37kg Co2 this week.</li>
+            <li>Your next Journey starts in 11 hours,</li>
+            <li>You have a new message from support.</li>
+        </ul>
+    </div>
+
+</div> 
+    <script>
+        function openNewRidePage() {
+            window.location.href = "mainscreen.html";
+        }
+
+        function openSubscriptionPage() {
+            window.location.href = "View Subscriptions.html";
+        }
+
+        function openPaymentsPage() {
+            window.location.href = "payments.html";
+        }
+
+        function openProfilePage() {
+            window.location.href = "profile.html";
+        }
+
+        function openRideHistoryPage() {
+            window.location.href = "driver profile.html";
+        }
+
+        function openSupportPage() {
+            window.location.href = "support.html";
+        }
+
+        function openSettingsPage() {
+            window.location.href = "settings.html";
+        }
+
+        function openTrackRide() {
+            window.location.href = "ridetracking.html";
+        }
+    </script>
+</body>
+</html>

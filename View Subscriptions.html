@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="View Subscriptions.css">
+    <title>View Existing Subscriptions</title>
+</head>
+<body>
+    <div class="header">
+        <h1>View Subscriptions</h1>
+    </div>
+<div class="content">
+    <div class="subscription-list">
+        <div class="subscription">
+            <div class="plan-header">
+                <h1> To Office</h1>
+                <p> <h3> Expires on: October 25, 2023</h3> </p>
+            </div>
+            <div class="plan-details">
+                <div class="detail">
+                 
+                    </ul>
+                </div>
+            </div>
+            <div class="options">
+                <button class="renew" onclick="renewSubscription('Monthly Plan')">Renew</button>
+                <button class="cancel" onclick="cancelSubscription('Monthly Plan')">Cancel</button>
+                <button class="pause" onclick="pauseSubscription('Monthly Plan')">Pause</button>
+            </div>
+        </div>
+        <!-- Add more subscriptions as needed -->
+    </div>
+
+    <div class="subscription-list">
+        <div class="subscription">
+            <div class="plan-header">
+                <h1> To Home</h1>
+                <p> <h3> Expires on: October 30, 2023</h3> </p>
+            </div>
+            <div class="plan-details">
+                <div class="detail">
+                </div>
+            </div>
+            <div class="options">
+                <button class="renew" onclick="renewSubscription('Monthly Plan')">Renew</button>
+                <button class="cancel" onclick="cancelSubscription('Monthly Plan')">Cancel</button>
+                <button class="pause" onclick="pauseSubscription('Monthly Plan')">Pause</button>
+            </div>
+        </div>
+        <!-- Add more subscriptions as needed -->
+    </div>
+</div>
+    <script>
+        function renewSubscription(plan) {
+            alert('Renewing ' + plan);
+            // Add logic to handle subscription renewal
+        }
+
+        function cancelSubscription(plan) {
+            alert('Cancelling ' + plan);
+            // Add logic to handle subscription cancellation
+        }
+
+        function pauseSubscription(plan) {
+            alert('Pausing ' + plan);
+            // Add logic to handle subscription pausing
+        }
+    </script>
+</body>
+</html>
